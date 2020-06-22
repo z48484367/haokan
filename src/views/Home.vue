@@ -1,12 +1,10 @@
 <template>
-    <login></login>
+    <h3>登录成功</h3>
 </template>
 
 <script>
-    import Login from "../components/Login";
     export default {
         name: "Home",
-        components: {Login}
     }
 </script>
 

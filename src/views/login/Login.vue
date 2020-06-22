@@ -32,10 +32,10 @@
 </template>
 
 <script>
-    import { encrypt } from '../utils/rsaEncrypt'
-    import Config from '../settings'
+    import { encrypt } from '../../utils/rsaEncrypt'
+    import Config from '../../settings'
     import Cookies from 'js-cookie'
-    import Background from '../assets/images/background.jpg'
+    import Background from '../../assets/images/background.jpg'
     export default {
         name: 'Login',
         data() {
@@ -108,7 +108,7 @@
                         }
                         this.$store.dispatch('Login', user).then(() => {
                             this.loading = false
-                            this.$router.push({ path: this.redirect || '/test' })
+                            this.$router.push({ path: this.redirect || '/' })
                         }).catch(() => {
                             this.loading = false
                         })
